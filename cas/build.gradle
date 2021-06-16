@@ -10,17 +10,6 @@ buildscript {
 }
 apply plugin: 'waroverlay'
 
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath "org.scaldingspoon.gradle:gradle-waroverlay-plugin:0.9.3"
-    }
-}
-apply plugin: 'waroverlay'
-
 def currentBranch = "master"
 def currentVersion = "${project.'cas.version'}"
 if (!currentVersion.contains("RC")) {
