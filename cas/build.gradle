@@ -1,14 +1,5 @@
 apply plugin: "org.springframework.boot"
-
-buildscript {
-    repositories {
-        jcenter()
-    }
-    dependencies {
-        classpath "org.scaldingspoon.gradle:gradle-waroverlay-plugin:0.9.3"
-    }
-}
-apply plugin: 'waroverlay'
+apply from: "https://dl.bintray.com/scalding/generic/waroverlay.gradle"
 
 def currentBranch = "master"
 def currentVersion = "${project.'cas.version'}"
